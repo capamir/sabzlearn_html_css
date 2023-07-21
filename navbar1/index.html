@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar d-flex">
+      <div class="navbar d-grid">
         <div class="left_nav">
           <div class="nav_logo d-flex">
             <div class="nav_logo-img">
@@ -19,11 +19,11 @@
         </div>
         <div class="center_nav">
           <ul class="d-flex">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#" class="link">Profile</a></li>
+            <li><a href="#" class="link">Messages</a></li>
+            <li><a href="#" class="link">About us</a></li>
+            <li><a href="#" class="link">Login</a></li>
           </ul>
         </div>
         <div class="right_nav d-flex">
@@ -90,6 +90,21 @@
               <img src="img/team4.png" alt="" />
             </div>
           </div>
+        </div>
+        <div class="nav_mobile">
+          <input type="checkbox" id="toggle_nav" hidden />
+          <label for="toggle_nav" class="label_toggle_nav">
+            <span class="line line_top"></span>
+            <span class="line line_mid"></span>
+            <span class="line line_bottom"></span>
+          </label>
+          <ul class="list_nav_mobile">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
         </div>
       </div>
     </div>
