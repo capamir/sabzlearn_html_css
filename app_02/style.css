@@ -74,7 +74,7 @@ img {
   color: var(--color-logo);
 }
 
-.active {
+.navbar .links li a.active {
   background-color: var(--color-logo);
   color: var(--color-link-active);
   padding: 0.5rem 1.5rem;
@@ -84,7 +84,7 @@ img {
   -ms-border-radius: 9px;
   -o-border-radius: 9px;
 }
-active:hover {
+.navbar .links li a.active:hover {
   box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
 }
 
@@ -97,6 +97,7 @@ active:hover {
   max-width: 1200px;
   margin: auto;
   gap: 5rem;
+  padding: 0 1rem;
 }
 
 .left_content {
@@ -302,6 +303,14 @@ active:hover {
   }
   .navbar .nav_mobile .list_nav_mobile li a.active {
     color: var(--color-link-active);
+    background-color: var(--color-logo);
+    color: var(--color-link-active);
+    padding: 0.5rem 1.5rem;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
   }
   #toggle_nav:checked + label + ul {
     transform: translateX(0);
