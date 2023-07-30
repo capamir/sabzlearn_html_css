@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+img {
+  width: 100%;
+}
+input:focus,
+input:active {
+  outline: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circle_1 {
+  width: 1000px;
+  height: 1000px;
+  z-index: -1;
+  position: fixed;
+  left: -9rem;
+  top: 54%;
+
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+
+  transform: translateY(-38%);
+  -webkit-transform: translateY(-38%);
+  -moz-transform: translateY(-38%);
+  -ms-transform: translateY(-38%);
+  -o-transform: translateY(-38%);
+
+  background-image: linear-gradient(to right, #94a3c2, #596888);
+}
+
+/* ---------- Login pannel ------------- */
+.login {
+  display: flex;
+  max-width: 1200px;
+  width: 81%;
+  height: 600px;
+  align-items: center;
+  border: 5px solid #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+}
+/* ---------- left pannel ------------- */
+
+.login .form {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0circle_1);
+  backdrop-filter: blur(22px);
+}
+
+.login .form h1 {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.login .form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.login .form .form-group label {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  padding-left: 12px;
+}
+
+.login .form .form-group input {
+  border: 2px solid #fff;
+  height: 45px;
+  background-color: transparent;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding-left: 13px;
+  color: #fff;
+}
+
+.login .form .submit-button {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.login .form .submit-button button {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  padding: 13px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.login .form .bottom-form a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ---------- right pannel ------------- */
+
+.login .login-img {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #fff;
+}
+
+.login .login-img img {
+  object-fit: cover;
+}
+
+/* ------------- media --------------- */
+@media screen and (max-width: 768px) {
+  .login .login-img {
+    display: none;
+  }
+
+  .login .form {
+    width: 100%;
+  }
+  .form-group,
+  .submit-button {
+    width: 80%;
+  }
+}
