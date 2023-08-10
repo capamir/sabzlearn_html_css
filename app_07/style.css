@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+:root {
+  --color-bg: #dde1e7;
+  --shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.3);
+  --shadow-focus: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94, 104, 121, 0.3);
+
+  --color-keys: #808080;
+  --color-keys-focus: #3498db;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  height: 100vh;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard_section {
+  width: 1000px;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+.row input {
+  border: none;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow);
+  height: 50px;
+  min-width: 50px;
+  font-size: 20px;
+  color: var(--color-keys);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.row input#space {
+  width: 60%;
+}
+
+.row input:focus {
+  color: var(--color-keys-focus);
+  box-shadow: var(--shadow-focus);
+  font-size: 19px;
+}
+
+@media screen and (max-width: 900px) {
+  .keyboard_section {
+    width: 800px;
+  }
+  .row {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .keyboard_section {
+    width: 700px;
+  }
+  .row {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .keyboard_section {
+    width: 550px;
+  }
+  .row {
+    gap: 10px;
+  }
+  .row input {
+    height: 35px;
+    min-width: 35px;
+    font-size: 12px;
+  }
+  .row input:focus {
+    color: #3498db;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .keyboard_section {
+    width: 400px;
+    padding: 10px;
+  }
+  .row input {
+    height: 25px;
+    min-width: 25px;
+  }
+}
